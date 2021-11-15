@@ -1,0 +1,89 @@
+<!Doctype html>
+<html lang="en-US">
+<link rel="stylesheet" type=text/css href="Bill_CSS.css">
+<head>
+  <title>Bill Form</title>
+</head>
+<body>
+  <div id="main">
+    <header>
+      <h1 id="title">Bill Reimbursement</h1>
+      <p id="description"><strong>Apply For Bill</strong></p>
+    </header>
+    <main>
+      <form id="Bill-form">
+        <div class="bottom-top-padding">
+          <div class="label-div">
+            <label id="name-label"><strong>Name: </strong></label>
+          </div>
+          <div class="input-div">
+            <input id="name" class="input-text" type="text" placeholder="Enter Name" required>
+          </div>
+        </div>
+        <div class="bottom-top-padding">
+          <div class="label-div">
+            <label id="email-label" for="email"><strong>E-mail: </strong></label>
+          </div>
+          <div class="input-div">
+            <input id="email" class="input-text" type="email" placeholder="Enter E-Mail" required></div>
+        </div>
+        <div class="bottom-top-padding">
+          <div class="label-div">
+            <label><strong>Gender:</strong></label>
+          </div>
+          <div>
+            <label> 
+  		<input type="radio" name="gender" value="male">Male
+	    </label>
+            </br>
+            <label> 
+ 		 <input type="radio" name="gender" value="female">Female
+	    </label>
+          </div>
+        </div>
+        <div class="bottom-top-padding">
+          <div class="label-div">
+            <label for="dropdown"><strong>Allowance Category</strong></label>
+          </div>
+          <div class="input-div">
+            <select id="dropdown" type="dropdown">
+         <option value="option" disabled selected>Select an option</option>
+            <option value="FOOD">FOOD</option>
+            <option value="TRAVEL">TRAVEL</option>
+            <option value="TAX">TAX</option>
+            <option value="EXTRA">EXTRA TIME</option>
+      </select>
+          </div>
+        </div>
+        
+        <div class="bottom-top-padding">
+          <div class="label-div">
+            <label><strong>Transfer Money By</strong></label>
+          </div>
+          <div class="input-div">
+            <label><input type="checkbox" name="Transfer" value="BankTransfer"> Bank Transfer</label>
+            </br>
+            <label><input type="checkbox" name="Transfer" value="Cheque">By Cheque</label>
+            </br>
+    	   <label><input type="checkbox" name="Transfer" value="UPIID">UPI Id</label>
+            <br>
+          </div>
+        </div>
+        <div class="bottom-top-padding">
+          <div class="label-div">
+            <label><strong>Any Queries?</strong></label>
+          </div>
+          <div class="input-div">
+            <textarea type="text"></textarea>
+          </div>
+        </div>
+        <div id="submit-div">
+          <button id="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </div>
+</body>
+
+</html>
+
